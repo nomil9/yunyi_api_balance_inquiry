@@ -4,6 +4,10 @@
   "publisher": "yunyi",
   "version": "1.1.1",
   "icon": "resources/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nomil9/yunyi_api_balance_inquiry.git"
+  },
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -21,7 +25,7 @@
     "commands": [
       {
         "command": "yunyi.checkBalance",
-        "title": "Yunyi: Check Balance"
+        "title": "云驿：查询余额"
       }
     ],
     "configuration": {
@@ -30,41 +34,49 @@
         "yunyi.baseUrl": {
           "type": "string",
           "default": "https://yunyi.cfd/user/api/v1/me",
+          "title": "API 地址",
           "description": "云驿 API 地址，用于获取用户信息"
         },
         "yunyi.apiToken": {
           "type": "string",
           "default": "",
+          "title": "旧版 Token（兼容单 key）",
           "description": "云驿 API Bearer Token（单 key / 兼容旧版）"
         },
         "yunyi.api-1": {
           "type": "string",
           "default": "",
+          "title": "API-1 Token",
           "description": "api-1 的 Bearer Token（可选）"
         },
         "yunyi.api-2": {
           "type": "string",
           "default": "",
+          "title": "API-2 Token",
           "description": "api-2 的 Bearer Token（可选）"
         },
         "yunyi.api-3": {
           "type": "string",
           "default": "",
+          "title": "API-3 Token",
           "description": "api-3 的 Bearer Token（可选）"
         },
         "yunyi.autoRefresh": {
           "type": "boolean",
           "default": true,
+          "title": "自动刷新",
           "description": "在状态栏自动刷新"
         },
         "yunyi.refreshIntervalMinutes": {
           "type": "number",
           "default": 10,
+          "title": "刷新间隔（分钟）",
           "description": "自动刷新间隔（分钟）"
         },
         "yunyi.warningThresholdPercent": {
           "type": "number",
           "default": 80,
+          "title": "警告阈值（%）",
           "description": "任一 key 已用比例达到该值时显示警告"
         }
       }
