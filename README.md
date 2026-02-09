@@ -5,7 +5,7 @@
 ## 使用步骤
 1. 打开设置，确认 `yunyi.baseUrl`（默认 `https://yunyi.cfd/user/api/v1/me`）指向你的云驿 API。
 2. 在设置中填写 `yunyi.api-1 / yunyi.api-2 / yunyi.api-3`（任意一个即可），或仅填写 `yunyi.apiToken`（兼容旧版单 key）。
-3. 调出命令面板（`Ctrl+Shift+P`），执行 `Yunyi: Check Balance` 立即刷新一次。
+3. 调出命令面板（`Ctrl+Shift+P`），执行 `云驿：查询余额` 立即刷新一次。
 4. 如果开启自动刷新，扩展会按设定间隔在后台刷新状态栏显示。
 
 ## 配置项
